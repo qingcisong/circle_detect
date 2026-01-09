@@ -8,7 +8,7 @@ original_can = cv2.imread("original_can.png")
 grey = cv2.cvtColor(original_can, cv2.COLOR_BGR2GRAY)
 
 #find the circumference+center
-processed_can = cv2.HoughCircles(image=grey, method=cv2.HOUGH_GRADIENT, dp=1, minDist=500, param1=50, param2=45, minRadius=1000, maxRadius=1300)
+processed_can = cv2.HoughCircles(image=grey, method=cv2.HOUGH_GRADIENT, dp=1, minDist=500, param1=50, param2=53, minRadius=1000, maxRadius=1300)
 
 #extract the detected circle data
 processed_can = processed_can[0]
